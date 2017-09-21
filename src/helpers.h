@@ -13,7 +13,7 @@ enum Estado {S,PI,I,R,V};
 
 int damePuerto(std::string nombreDelPuerto);
 
-VTime toVTime(float f);
+VTime toVTime(double f);
 
 BasicMsgValue* me_infectaron();
 BasicMsgValue* te_infecte();

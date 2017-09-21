@@ -112,13 +112,23 @@ Model &Persona1::externalFunction(const ExternalMessage &msg)
 		case 2:
 			//me infectaron
 		{
-			if (debug) cout << name << ":(b):got-infected" << endl;
-			this->estadoActual = PI;
-				//TODO: check if this is how you set ta = 0
-			VTime now(0,0,0,0);
-			holdIn(AtomicState::active,now);
-			if (debug) cout << name << ":(b):got-infected" << endl;
+			//TODO: agregar a la spec?
+			switch(this->estadoActual){
+				case S:
+					{
+						if (debug) cout << name << ":(b):got-infected" << endl;
+						this->estadoActual = PI;
+							//TODO: check if this is how you set ta = 0
+						VTime now(0,0,0,0);
+						holdIn(AtomicState::active,now);
+						if (debug) cout << name << ":(b):got-infected" << endl;
+					}
+					break;
+				default: 
+				holdIn(AtomicState::active,this->nextChange());
+				break;
 
+			}
 		}
 
 		break;
@@ -184,30 +194,40 @@ Model &Persona1::internalFunction(const InternalMessage &)
 	switch(this->estadoActual){
 		case S:
 		{
+			if (debug) cout << name << "(b):got-vaccinated" << endl;
 			this->estadoActual = V;
 			passivate();
+			if (debug) cout << name << "(e):got-vaccinated" << endl;
 		}
 		break;
 		case PI:
 		{
+			if (debug) cout << name << "(b):pre-infected" << endl;
 			this->estadoActual= I;
 			setearRelojDeInfeccion();
+			if (debug) cout << name << "(e):pre-infected" << endl;
 		}
 		break;
 		case I:
 		{
 			if (this->recuperado){
+				if (debug) cout << name << "(b):is-recovered" << endl;
 				this->estadoActual = R;
 				passivate();
+				if (debug) cout << name << "(e):is-recovered" << endl;
 			}else {
-					passivate(); //esperamos a que el infectado nos despierte en tiempo cero
-				}
+				if (debug) cout << name << "(b):infected-someone" << endl;
+				//TODO: cambiar la spec, no funciona con colisiones esto
+				// passivate(); //esperamos a que el infectado nos despierte en tiempo cero
+				setearRelojDeInfeccion();
+				if (debug) cout << name << "(e):infected-someone" << endl;
 			}
-			break;
-			default:
-			cerr << "error: se ejecuto una delta interna en un estado invalido" << endl;
-			throw std::exception();
-			;
+		}
+		break;
+		default:
+		cerr << "error: se ejecuto una delta interna en un estado invalido" << endl;
+		throw std::exception();
+		;
 		}
 		if (debug) cout << name << "(e):int-trans" << endl;
 		return *this ;
@@ -220,34 +240,43 @@ Model &Persona1::internalFunction(const InternalMessage &)
 		switch(this->estadoActual){
 			case S:
 			{
+				if (debug) cout << name << "(b):report-vaccination" << endl;
 				for(int i= 0; i < nvecinos; i++){
 					if (vecinos[i]==S || vecinos[i] == I){
 						sendOutput(msg.time(),*vecinos2port[i],me_vacune());
 					}
 				}
+				if (debug) cout << name << "(e):report-vaccination" << endl;
+
 			}
 			break;
 			case PI: 
 			{
+				if (debug) cout << name << "(b):report-infection" << endl;
 				for(int i= 0; i < nvecinos; i++){
 					if (vecinos[i]==S){
 						sendOutput(msg.time(),*vecinos2port[i],me_infectaron());
 					}
 				}
+				if (debug) cout << name << "(e):report-infection" << endl;
 			}
 			break;
 			case I:
 			{
 				if(this->recuperado){
+					if (debug) cout << name << "(b):report-recovering" << endl;
 					for(int i= 0; i < nvecinos; i++){
 						if (vecinos[i]==S){
 							sendOutput(msg.time(),*vecinos2port[i],me_recupere());
 						}
 					}
+					if (debug) cout << name << "(e):report-recovering" << endl;
 				}else {
 					//tengo que infectar a uno de mis vecinos susceptibles
+					if (debug) cout << name << "(b):report-infection" << endl;
 					if (susceptibles(vecinos)>0){
 						//TODO: mover a otra funcion
+						if (debug) cout << name << ":has " <<susceptibles(vecinos) << " S" << endl;
 						vector<int> susc_index(susceptibles(vecinos));
 						int j = 0;
 						for(int  i= 0; i < nvecinos; i++){
@@ -256,9 +285,15 @@ Model &Persona1::internalFunction(const InternalMessage &)
 								j++;
 							}
 						}
-						std::uniform_int_distribution<> dunif(0,susc_index.size());
-						sendOutput(msg.time(),*vecinos2port[susc_index[dunif(this->gen)]],te_infecte());			
+						std::uniform_int_distribution<> dunif(0,susc_index.size()-1);
+						int index = dunif(this->gen);
+						Port* p =  vecinos2port[susc_index[index]];
+						sendOutput(msg.time(),*vecinos2port[susc_index[index]],te_infecte());
+						if (debug) cout << name << ":sent infect over port "<< p->name() << endl;			
+					} else {
+						if (debug) cout << name << "(b):report-infection-no-neighbors-to-infect" << endl;
 					}
+					if (debug) cout << name << "(e):report-infection" << endl;
 				}
 
 			}
