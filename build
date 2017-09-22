@@ -3,6 +3,6 @@ rm src/*.dep*
 rm src/*.h
 rm -r codegen/dyncode
 mkdir -p codegen/dyncode
-python codegen/code-template.py codegen/ 28 codegen/dyncode
+python codegen/code-template.py codegen/ 72 codegen/dyncode
 cp -r codegen/dyncode/* src/
 cp -r static_code/* src/

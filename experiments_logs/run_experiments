@@ -1,0 +1,172 @@
+rm -r constants_1/gamma*
+rm -r constants_2/gamma*
+rm -r constants_3/gamma*
+
+mkdir -p constants_1/gamma1000alpha10beta1
+mkdir -p constants_1/gamma1000alpha1beta01
+mkdir -p constants_1/gamma1000alpha30beta3
+mkdir -p constants_1/gamma1000alpha3beta03
+cp constants_1/constants.h ../static_code/constants.h
+cd ..
+./build
+cd src/
+make
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log1
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log2
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log3
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log4
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log5
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log6
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log7
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log8
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log9
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log1
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log2
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log3
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log4
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log5
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log6
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log7
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log8
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log9
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log1
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log2
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log3
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log4
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log5
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log6
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log7
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log8
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log9
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log1
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log2
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log3
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log4
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log5
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log6
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log7
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log8
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log9
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_1/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log10
+
+cd ../experiments_logs
+
+mkdir -p constants_2/gamma1000alpha10beta1
+mkdir -p constants_2/gamma1000alpha1beta01
+mkdir -p constants_2/gamma1000alpha30beta3
+mkdir -p constants_2/gamma1000alpha3beta03
+cp constants_2/constants.h ../static_code/constants.h
+cd ..
+./build
+cd src/
+make
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log1
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log2
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log3
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log4
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log5
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log6
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log7
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log8
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log9
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log1
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log2
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log3
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log4
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log5
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log6
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log7
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log8
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log9
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log1
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log2
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log3
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log4
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log5
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log6
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log7
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log8
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log9
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log1
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log2
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log3
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log4
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log5
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log6
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log7
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log8
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log9
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_2/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log10
+
+cd ../experiments_logs
+
+mkdir -p constants_3/gamma1000alpha10beta1
+mkdir -p constants_3/gamma1000alpha1beta01
+mkdir -p constants_3/gamma1000alpha30beta3
+mkdir -p constants_3/gamma1000alpha3beta03
+cp constants_3/constants.h ../static_code/constants.h
+cd ..
+./build
+cd src/
+make
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log1
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log2
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log3
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log4
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log5
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log6
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log7
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log8
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log9
+bin/cd++ -m../models/gamma1000alpha10beta1.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha10beta1/gamma1000alpha10beta1.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log1
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log2
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log3
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log4
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log5
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log6
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log7
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log8
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log9
+bin/cd++ -m../models/gamma1000alpha1beta01.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha1beta01/gamma1000alpha1beta01.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log1
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log2
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log3
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log4
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log5
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log6
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log7
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log8
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log9
+bin/cd++ -m../models/gamma1000alpha30beta3.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha30beta3/gamma1000alpha30beta3.ma.log10
+
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log1
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log2
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log3
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log4
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log5
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log6
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log7
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log8
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log9
+bin/cd++ -m../models/gamma1000alpha3beta03.ma -e../infection.ev > ../experiments_logs/constants_3/gamma1000alpha3beta03/gamma1000alpha3beta03.ma.log10
+
+
+
+
+
+

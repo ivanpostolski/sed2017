@@ -16,9 +16,9 @@ int damePuerto(std::string nombreDelPuerto){
 
 
 VTime toVTime(double f){
-	if (debug) cout << "ta= " << round(f*100000) << " (sec)" << endl;
+	if (debug) cout << "ta= " << round(f*10000000) << " (sec)" << endl;
 	
-	time_t seconds(round(f*100000)); // you have to convert your input_seconds into time_t
+	time_t seconds(round(f*10000000)); // you have to convert your input_seconds into time_t
 	tm *p = gmtime(&seconds); // convert to broken down time
 	VTime res(p->tm_yday,p->tm_hour,p->tm_min,p->tm_sec);
 	return res;

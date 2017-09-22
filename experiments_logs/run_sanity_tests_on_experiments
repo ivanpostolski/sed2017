@@ -1,0 +1,15 @@
+python sanity_test.py ../experiments_logs/constants_1/gamma1000alpha10beta1/
+python sanity_test.py ../experiments_logs/constants_1/gamma1000alpha1beta01/
+python sanity_test.py ../experiments_logs/constants_1/gamma1000alpha30beta3/
+python sanity_test.py ../experiments_logs/constants_1/gamma1000alpha3beta03/
+
+python sanity_test.py ../experiments_logs/constants_2/gamma1000alpha10beta1/
+python sanity_test.py ../experiments_logs/constants_2/gamma1000alpha1beta01/
+python sanity_test.py ../experiments_logs/constants_2/gamma1000alpha30beta3/
+python sanity_test.py ../experiments_logs/constants_2/gamma1000alpha3beta03/
+
+python sanity_test.py ../experiments_logs/constants_3/gamma1000alpha10beta1/
+python sanity_test.py ../experiments_logs/constants_3/gamma1000alpha1beta01/
+python sanity_test.py ../experiments_logs/constants_3/gamma1000alpha30beta3/
+python sanity_test.py ../experiments_logs/constants_3/gamma1000alpha3beta03/
+

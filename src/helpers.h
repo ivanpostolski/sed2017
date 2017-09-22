@@ -2,12 +2,9 @@
 #define _HELPERS_
 
 
-#define nu 1000
-#define rho 1000
-#define gamma 1000
-
 #include "intmsg.h"
 #include "VTime.h"
+#include "constants.h"
 
 enum Estado {S,PI,I,R,V};
 

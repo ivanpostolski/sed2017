@@ -172,16 +172,14 @@ Model &Persona21::externalFunction(const ExternalMessage &msg)
 		case 2:
 			//me infectaron
 		{
-			//TODO: agregar a la spec?
 			switch(this->estadoActual){
 				case S:
 					{
 						if (debug) cout << name << ":(b):got-infected" << endl;
 						this->estadoActual = PI;
-							//TODO: check if this is how you set ta = 0
 						VTime now(0,0,0,0);
 						holdIn(AtomicState::active,now);
-						if (debug) cout << name << ":(b):got-infected" << endl;
+						if (debug) cout << name << ":(e):got-infected" << endl;
 					}
 					break;
 				default: 
@@ -277,8 +275,6 @@ Model &Persona21::internalFunction(const InternalMessage &)
 				if (debug) cout << name << "(e):is-recovered" << endl;
 			}else {
 				if (debug) cout << name << "(b):infected-someone" << endl;
-				//TODO: cambiar la spec, no funciona con colisiones esto
-				// passivate(); //esperamos a que el infectado nos despierte en tiempo cero
 				setearRelojDeInfeccion();
 				if (debug) cout << name << "(e):infected-someone" << endl;
 			}
@@ -335,7 +331,6 @@ Model &Persona21::internalFunction(const InternalMessage &)
 					//tengo que infectar a uno de mis vecinos susceptibles
 					if (debug) cout << name << "(b):report-infection" << endl;
 					if (susceptibles(vecinos)>0){
-						//TODO: mover a otra funcion
 						if (debug) cout << name << ":has " <<susceptibles(vecinos) << " S" << endl;
 						vector<int> susc_index(susceptibles(vecinos));
 						int j = 0;

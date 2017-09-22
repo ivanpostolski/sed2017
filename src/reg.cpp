@@ -30,6 +30,50 @@
 #include "persona26.h"
 #include "persona27.h"
 #include "persona28.h"
+#include "persona29.h"
+#include "persona30.h"
+#include "persona31.h"
+#include "persona32.h"
+#include "persona33.h"
+#include "persona34.h"
+#include "persona35.h"
+#include "persona36.h"
+#include "persona37.h"
+#include "persona38.h"
+#include "persona39.h"
+#include "persona40.h"
+#include "persona41.h"
+#include "persona42.h"
+#include "persona43.h"
+#include "persona44.h"
+#include "persona45.h"
+#include "persona46.h"
+#include "persona47.h"
+#include "persona48.h"
+#include "persona49.h"
+#include "persona50.h"
+#include "persona51.h"
+#include "persona52.h"
+#include "persona53.h"
+#include "persona54.h"
+#include "persona55.h"
+#include "persona56.h"
+#include "persona57.h"
+#include "persona58.h"
+#include "persona59.h"
+#include "persona60.h"
+#include "persona61.h"
+#include "persona62.h"
+#include "persona63.h"
+#include "persona64.h"
+#include "persona65.h"
+#include "persona66.h"
+#include "persona67.h"
+#include "persona68.h"
+#include "persona69.h"
+#include "persona70.h"
+#include "persona71.h"
+#include "persona72.h"
 
 
 void register_atomics_on(ParallelModelAdmin &admin)
@@ -63,4 +107,48 @@ void register_atomics_on(ParallelModelAdmin &admin)
 	admin.registerAtomic(NewAtomicFunction<Persona26>(), "Persona26");
 	admin.registerAtomic(NewAtomicFunction<Persona27>(), "Persona27");
 	admin.registerAtomic(NewAtomicFunction<Persona28>(), "Persona28");
+	admin.registerAtomic(NewAtomicFunction<Persona29>(), "Persona29");
+	admin.registerAtomic(NewAtomicFunction<Persona30>(), "Persona30");
+	admin.registerAtomic(NewAtomicFunction<Persona31>(), "Persona31");
+	admin.registerAtomic(NewAtomicFunction<Persona32>(), "Persona32");
+	admin.registerAtomic(NewAtomicFunction<Persona33>(), "Persona33");
+	admin.registerAtomic(NewAtomicFunction<Persona34>(), "Persona34");
+	admin.registerAtomic(NewAtomicFunction<Persona35>(), "Persona35");
+	admin.registerAtomic(NewAtomicFunction<Persona36>(), "Persona36");
+	admin.registerAtomic(NewAtomicFunction<Persona37>(), "Persona37");
+	admin.registerAtomic(NewAtomicFunction<Persona38>(), "Persona38");
+	admin.registerAtomic(NewAtomicFunction<Persona39>(), "Persona39");
+	admin.registerAtomic(NewAtomicFunction<Persona40>(), "Persona40");
+	admin.registerAtomic(NewAtomicFunction<Persona41>(), "Persona41");
+	admin.registerAtomic(NewAtomicFunction<Persona42>(), "Persona42");
+	admin.registerAtomic(NewAtomicFunction<Persona43>(), "Persona43");
+	admin.registerAtomic(NewAtomicFunction<Persona44>(), "Persona44");
+	admin.registerAtomic(NewAtomicFunction<Persona45>(), "Persona45");
+	admin.registerAtomic(NewAtomicFunction<Persona46>(), "Persona46");
+	admin.registerAtomic(NewAtomicFunction<Persona47>(), "Persona47");
+	admin.registerAtomic(NewAtomicFunction<Persona48>(), "Persona48");
+	admin.registerAtomic(NewAtomicFunction<Persona49>(), "Persona49");
+	admin.registerAtomic(NewAtomicFunction<Persona50>(), "Persona50");
+	admin.registerAtomic(NewAtomicFunction<Persona51>(), "Persona51");
+	admin.registerAtomic(NewAtomicFunction<Persona52>(), "Persona52");
+	admin.registerAtomic(NewAtomicFunction<Persona53>(), "Persona53");
+	admin.registerAtomic(NewAtomicFunction<Persona54>(), "Persona54");
+	admin.registerAtomic(NewAtomicFunction<Persona55>(), "Persona55");
+	admin.registerAtomic(NewAtomicFunction<Persona56>(), "Persona56");
+	admin.registerAtomic(NewAtomicFunction<Persona57>(), "Persona57");
+	admin.registerAtomic(NewAtomicFunction<Persona58>(), "Persona58");
+	admin.registerAtomic(NewAtomicFunction<Persona59>(), "Persona59");
+	admin.registerAtomic(NewAtomicFunction<Persona60>(), "Persona60");
+	admin.registerAtomic(NewAtomicFunction<Persona61>(), "Persona61");
+	admin.registerAtomic(NewAtomicFunction<Persona62>(), "Persona62");
+	admin.registerAtomic(NewAtomicFunction<Persona63>(), "Persona63");
+	admin.registerAtomic(NewAtomicFunction<Persona64>(), "Persona64");
+	admin.registerAtomic(NewAtomicFunction<Persona65>(), "Persona65");
+	admin.registerAtomic(NewAtomicFunction<Persona66>(), "Persona66");
+	admin.registerAtomic(NewAtomicFunction<Persona67>(), "Persona67");
+	admin.registerAtomic(NewAtomicFunction<Persona68>(), "Persona68");
+	admin.registerAtomic(NewAtomicFunction<Persona69>(), "Persona69");
+	admin.registerAtomic(NewAtomicFunction<Persona70>(), "Persona70");
+	admin.registerAtomic(NewAtomicFunction<Persona71>(), "Persona71");
+	admin.registerAtomic(NewAtomicFunction<Persona72>(), "Persona72");
 }
