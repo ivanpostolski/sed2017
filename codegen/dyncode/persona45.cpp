@@ -382,7 +382,7 @@ Model &Persona45::internalFunction(const InternalMessage &)
 			{
 				if (debug) cout << name << "(b):report-infection" << endl;
 				for(int i= 0; i < nvecinos; i++){
-					if (vecinos[i]==S){
+					if (vecinos[i]==S || vecinos[i] == I){
 						sendOutput(msg.time(),*vecinos2port[i],me_infectaron());
 					}
 				}

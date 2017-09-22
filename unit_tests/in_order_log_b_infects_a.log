@@ -1,0 +1,96 @@
+PCD++: A Tool to Implement n-Dimensional Cell-DEVS models
+----------------------------------------------------------
+Version 3.0 March-2003 -  Compiled for StandAlone Simulation 
+Troccoli A., Rodriguez D., Wainer G., Barylko A., Beyoglonian J., Lopez A.
+Departamento de Computacion. Facultad de Ciencias Exactas y Naturales.
+Universidad de Buenos Aires. Argentina.
+
+Loading models from in-order.ma
+Loading events from ../infection.ev
+Running parallel simulation. Reading models partition from 
+Model partition details output to: /dev/null*
+Message log: 
+Output to: /dev/null
+Tolerance set to: 1e-08
+Configuration to show real numbers: Width = 12 - Precision = 5
+Quantum: Not used
+Evaluate Debug Mode = OFF
+Flat Cell Debug Mode = OFF
+Debug Cell Rules Mode = OFF
+Temporary File created by Preprocessor = /tmp/fileAPMQBS
+Printing parser information = OFF
+
+Stop at time: Infinity.
+LP 0: initializing simulation objects
+00:00:00:000:0 / infect /      2.00000
+LP 0: starting simulation (NoTime).
+b:(b):init 
+b:(e):init 
+a:(b):init 
+a:(e):init 
+b:(b):ext-trans
+b:(b):got-infected
+b:(e):got-infected
+b(e):ext-trans
+b(b):lambda
+b(b):report-infection
+b(e):report-infection
+b(e):lambda
+b(b):int-trans
+b(b):pre-infected
+ta= 6204 (sec)
+b(e):pre-infected
+b(e):int-trans
+a:(b):ext-trans
+a:(b):sick-neigh
+ta= 120261 (sec)
+a:(e):sick-neigh
+a(e):ext-trans
+b(b):lambda
+b(b):report-infection
+b:has 1 S
+b:sent infect over port out0
+b(e):report-infection
+b(e):lambda
+b(b):int-trans
+b(b):infected-someone
+ta= 9494 (sec)
+b(e):infected-someone
+b(e):int-trans
+a:(b):ext-trans
+a:(b):got-infected
+a:(e):got-infected
+a(e):ext-trans
+a(b):lambda
+a(b):report-infection
+a(e):report-infection
+a(e):lambda
+b:(b):ext-trans
+b:(b):sick-neigh
+ta= 48 (sec)
+b:(e):sick-neigh
+b(e):ext-trans
+a(b):int-trans
+a(b):pre-infected
+ta= 1276 (sec)
+a(e):pre-infected
+a(e):int-trans
+b(b):lambda
+b(b):report-recovering
+b(e):report-recovering
+b(e):lambda
+b(b):int-trans
+b(b):is-recovered
+b(e):is-recovered
+b(e):int-trans
+a(b):lambda
+a(b):report-recovering
+a(e):report-recovering
+a(e):lambda
+a(b):int-trans
+a(b):is-recovered
+a(e):is-recovered
+a(e):int-trans
+Simulation complete!
+Simulation ended!
+LP 0 has finished simualtion 
