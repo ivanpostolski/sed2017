@@ -21,8 +21,7 @@ At the cdpp kernel folder
 *src/make* 
 
 
-### In order to run a simulation on any of the provided graph models
-
+### In order to run a simulation on any of the provided graph models (already generated under models/) folder
 
 *cd src*
 
@@ -43,3 +42,12 @@ At the cdpp kernel folder
 ### And sanity testing over the experiments
 
 *./run_sanity_tests_on_experiments*
+
+### *Additional* In order to create a plot for an individual log file
+
+cd experiments_logs/
+python graficos.py {logfile}
+
+
+### *Additional* In order to run any of the unit tests, go to unit_tests folder and see the Readme.txt file
+
